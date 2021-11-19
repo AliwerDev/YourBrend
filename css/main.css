@@ -1,0 +1,705 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bg {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.712);
+  z-index: 99;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 989.9px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 767.9px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 446.9px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+header .lang select option, header .lang, header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo, header .lang {
+  width: 200px;
+}
+header ul {
+  list-style: none;
+  transition: all 0.5s linear;
+}
+header a {
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #0b132a;
+  transition: all 0.3s linear;
+}
+header a:hover {
+  color: #3131ce;
+}
+header .lang select {
+  border: none;
+  outline: none;
+  width: 60px;
+  font-size: 16px;
+}
+header .lang select option img {
+  width: 40px;
+}
+header .bar {
+  margin-left: 10px;
+  cursor: pointer;
+}
+header .times, header .bar {
+  display: none;
+}
+
+#section1 {
+  padding-top: 60px;
+  width: 100%;
+}
+#section1 .row {
+  align-items: center;
+}
+#section1 .col {
+  width: 50%;
+  padding: 20px;
+}
+#section1 .card {
+  width: 100%;
+}
+#section1 .card h1 {
+  font-size: 46px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #8cc5f9;
+}
+#section1 .card p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: #696b70;
+}
+#section1 .card button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #8cc5f9;
+}
+#section1 .card img {
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  header {
+    padding: 25px 60px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .header {
+    position: static;
+  }
+
+  header .times, header .bar {
+    display: block;
+  }
+  header ul {
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 999;
+  }
+  header ul .times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #section1 .col {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 989.9px) {
+  header {
+    padding: 25px 30px;
+  }
+
+  #section1 .col {
+    padding: 0;
+  }
+  #section1 .card h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  #section1 .card p {
+    font-size: 16px;
+  }
+  #section1 .card button {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 767.9px) {
+  header {
+    padding: 20px;
+  }
+  header .logo, header .lang {
+    width: 150px;
+  }
+
+  #section1 .col {
+    width: 100%;
+  }
+  #section1 .card {
+    text-align: center;
+  }
+  #section1 .card h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  #section1 .card p {
+    font-size: 18px;
+  }
+  #section1 .card button {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 447px) {
+  header {
+    padding: 10px;
+  }
+  header .logo, header .lang {
+    width: 100px;
+  }
+  header ul {
+    gap: 5px;
+  }
+  header ul a {
+    font-size: 12px;
+  }
+  header ul .times {
+    top: 3px;
+    right: 3px;
+    font-size: 14px;
+  }
+
+  #section1 .col {
+    width: 100%;
+  }
+  #section1 .card {
+    text-align: center;
+  }
+  #section1 .card h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #section1 .card p {
+    font-size: 14px;
+  }
+  #section1 .card button {
+    width: 200px;
+    height: 50px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 50px 150px 0px 150px;
+  background: #FFFFFF;
+}
+.container .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 36px;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 446.9px) {
+  .container .cards {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 767.9px) {
+  .container .cards {
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.container .cards .card, .container .cards .card3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33.3%;
+  border-right: 2px solid #EEEFF2;
+}
+@media screen and (max-width: 446.9px) {
+  .container .cards .card, .container .cards .card3 {
+    width: 100%;
+    border: none;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 767.9px) {
+  .container .cards .card, .container .cards .card3 {
+    width: 100%;
+    border: none;
+  }
+}
+.container .cards .card3 {
+  border: none !important;
+}
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.container .content .picuture img {
+  width: 45%;
+}
+@media screen and (max-width: 446.9px) {
+  .container .content .picuture img {
+    width: 400px;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 767.9px) {
+  .container .content .picuture {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+.container .content .features {
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.container .content .features h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #8CC5F9;
+}
+.container .content .features p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+.container .content .features .item, .container .content .features .item-a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .content .features .item p, .container .content .features .item-a p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+}
+.container .content .features .item-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.container .content .features .item-a a {
+  color: #8CC5F9;
+  text-align: center;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 989.9px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 767.9px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 446.9px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+#OurProducts {
+  background: #f8f8f8;
+}
+#OurProducts p {
+  color: #696b70;
+}
+#OurProducts .ta-center {
+  text-align: center;
+}
+#OurProducts p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+#OurProducts h1 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+#OurProducts .content {
+  max-width: 776px;
+  margin: 0 auto;
+}
+#OurProducts .row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#OurProducts .row h3 {
+  margin: 20px 0;
+  font-size: 22px;
+  line-height: 30px;
+}
+#OurProducts .row .card {
+  width: calc(30% - 20px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  min-width: 300px;
+  min-height: 365px;
+  padding: 36px;
+  margin: 26px 15px;
+  background-color: white;
+}
+#OurProducts .row .card img {
+  width: 39px;
+  height: 35px;
+}
+#OurProducts .row .card p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #08090A;
+  max-width: 300px;
+}
+#OurProducts .row .card a {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #8cc5f9;
+  color: #8cc5f9;
+  border-radius: 20px;
+  margin-top: 45px;
+}
+
+#Bet-tog {
+  background: rgba(253, 253, 253, 0.8);
+}
+#Bet-tog .row {
+  align-items: center;
+  justify-content: center;
+}
+#Bet-tog .row .col {
+  margin-right: 45px;
+  width: calc(20% - 45px);
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Bet-tog .row .content {
+  max-width: 555px;
+  margin: 0 auto;
+}
+#Bet-tog .row .map-image {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-block: 150px 80px;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  #OurProducts .row h3 {
+    margin: 18px 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  #OurProducts .row .card {
+    width: calc(40% - 20px);
+    border-radius: 22px;
+    margin: 24px 15px;
+    padding: 23px;
+  }
+
+  #Bet-tog .row .col {
+    margin-right: 40px;
+    width: calc(30% - 45px);
+    min-width: 200px;
+  }
+  #Bet-tog .row .map-image {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-block: 130px 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 989.9px) {
+  #OurProducts .content {
+    max-width: 776px;
+    margin: 0 auto;
+  }
+  #OurProducts .row {
+    width: 100%;
+  }
+  #OurProducts .row h3 {
+    margin: 18px 0;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  #OurProducts .row .card {
+    width: calc(45% - 25px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    min-width: 250px;
+    margin-right: 25px;
+    padding: 30px;
+    background-color: white;
+  }
+  #OurProducts .row .card a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 35px;
+  }
+
+  #Bet-tog .row .col {
+    margin-right: 30px;
+    width: calc(33.3% - 30px);
+  }
+  #Bet-tog .row .map-image {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-block: 130px 60px;
+  }
+}
+@media screen and (min-width: 448px) and (max-width: 767.9px) {
+  #OurProducts .row h3 {
+    margin: 16px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  #OurProducts .row .card {
+    width: calc(45% - 20px);
+    margin-right: 10px;
+    padding: 16px;
+  }
+  #OurProducts .row .card a {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 447.9px) {
+  #OurProducts p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #OurProducts h1 {
+    font-size: 28x;
+    line-height: 35px;
+  }
+  #OurProducts .row h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #OurProducts .row .card {
+    width: calc(100% - 20px);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    min-width: 150px;
+    min-height: 200px;
+    padding: 20px;
+    margin: 16px 10px;
+  }
+  #OurProducts .row .card img {
+    width: 30px;
+    height: 20px;
+  }
+  #OurProducts .row .card p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  #OurProducts .row .card a {
+    padding: 5px 10px;
+    border-radius: 16px;
+    margin-top: 25px;
+  }
+
+  #Bet-tog .ta-center {
+    text-align: center !important;
+  }
+  #Bet-tog .row .col {
+    margin-right: 15px;
+    width: calc(80% - 15px);
+    min-width: 200px;
+  }
+  #Bet-tog .row .map-image {
+    margin-block: 70px 30px;
+  }
+}
+.container4 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#section4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+#section4 .content {
+  width: 50%;
+  margin: 30px auto;
+}
+#section4 .content h1 {
+  font-size: 35px;
+  line-height: 100px;
+  color: #696b70;
+  text-align: center;
+}
+#section4 .content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #696b70;
+  text-align: center;
+}
+#section4 .carusel .col {
+  padding: 10px;
+}
+#section4 .carusel .card {
+  padding: 30px;
+  width: 400px;
+  height: 230px;
+  border-radius: 10px;
+  border: 2px solid #8cc5f9;
+  overflow: hidden;
+}
+#section4 .carusel .card .user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#section4 .carusel .card p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #0b132a;
+  margin-top: 10px;
+}
+#section4 .carusel .card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#section4 .carusel .card h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+#section4 .carusel .card h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #696b70;
+}
+
+/*# sourceMappingURL=main.css.map */

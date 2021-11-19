@@ -1,0 +1,304 @@
+$itemGap:30px;
+
+#OurProducts{
+background: $grey;
+
+p{
+    color: $p-color;
+}
+
+.ta-center{
+    text-align: center;
+}
+
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+    font-family: 'Rubik', sans-serif;
+        }
+
+
+.content   {
+    max-width: 776px;
+    margin: 0 auto;
+}
+
+
+
+.row{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h3{
+        margin: 20px 0;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .card{
+        width: calc(30% - 20px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+        min-width: 300px;
+        min-height: 365px;
+        padding: 36px;
+        margin: 26px 15px;
+        background-color: white;
+        img{
+            width: 39px;
+            height: 35px;
+        }
+        p{
+            font-family: 'Rubik', sans-serif;
+             font-weight: 400;
+             font-size: 18px;
+             line-height: 30px;
+             color: #08090A;
+             max-width: 300px;
+        }
+        a{
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            border-radius: 20px;
+            margin-top: 45px;
+
+        }
+    }
+}
+}
+
+
+#Bet-tog{
+    background: rgba(253, 253, 253, 0.8);
+    .row{
+        align-items: center;
+        justify-content: center;
+            .col{
+                margin-right: 45px;
+                width:calc(20% - 45px);
+                min-width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+           .content{
+               max-width: 555px;
+               margin: 0 auto;
+           }
+           .map-image{
+               width: 100%;
+               max-width: 1060px;
+               margin: 0 auto;
+               margin-block:150px 80px;
+           }
+    }
+
+
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    #OurProducts{    
+        .row{
+            h3{
+                margin: 18px 0;
+                font-size: 22px;
+                line-height: 30px;
+                }
+            .card{
+                width: calc(40% - 20px);
+                border-radius: 22px;
+                margin: 24px 15px;
+                padding: 23px;
+                }
+        }
+    }
+#Bet-tog{
+    .row{
+            .col{
+                margin-right: 40px;
+                width:calc(30% - 45px);
+                min-width: 200px;
+            }
+          
+           .map-image{
+               width: 100%;
+               max-width: 1060px;
+               margin: 0 auto;
+               margin-block:130px 70px;
+           }
+    }
+
+
+}
+   
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 989.9px) {
+
+    
+#OurProducts{
+    .content   {
+        max-width: 776px;
+        margin: 0 auto;
+    }
+    .row{
+        width: 100%;
+        h3{
+            margin: 18px 0;
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .card{
+            width: calc(45% - 25px);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 22px;
+            min-width: 250px;
+            margin-right: 25px;
+            padding: 30px;
+            background-color: white;
+                
+            a{
+                padding: 8px 16px;
+                border-radius: 20px;
+                margin-top: 35px;
+    
+            }
+        }
+    }
+    }
+   
+
+    
+
+#Bet-tog{
+    .row{
+            .col{
+                margin-right: 30px;
+                width:calc(33.3% - 30px);
+            }
+           
+           .map-image{
+               width: 100%;
+               max-width: 1060px;
+               margin: 0 auto;
+               margin-block:130px 60px;
+           }
+    }
+
+
+}
+
+
+
+}
+
+
+// from 448px to 767.9px
+
+@media screen and (min-width:448px) and (max-width: 767.9px) {
+        
+#OurProducts{
+    .row{
+        h3{
+            margin: 16px 0;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .card{
+            width: calc(45% - 20px);
+            margin-right: 10px;
+            padding: 16px;
+           
+            a{
+                margin-top: 40px;
+    
+            }
+        }
+    }
+    }
+    
+
+}
+
+@media screen and (min-width: 0) and (max-width: 447.9px) {
+#OurProducts{
+    
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+h1{
+    font-size: 28x;
+    line-height: 35px;
+}
+
+
+.row{
+    h3{
+        margin: 10px 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .card{
+        width: calc(100% - 20px);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        min-width: 150px;
+        min-height: 200px;
+        padding: 20px;
+        margin: 16px 10px;
+        img{
+            width: 30px;
+            height: 20px;
+        }
+        p{
+             font-size: 15px;
+             line-height: 22px;
+        }
+        a{
+            padding: 5px 10px;
+            border-radius: 16px;
+            margin-top: 25px;
+
+        }
+    }
+}
+}
+
+
+#Bet-tog{
+    .ta-center{
+        text-align: center !important;
+    }
+    .row{
+        
+            .col{
+                margin-right: 15px;
+                width:calc(80% - 15px);
+                min-width: 200px;
+
+            }
+           .map-image{
+               margin-block:70px 30px;
+           }
+    }
+
+}
+    
+}

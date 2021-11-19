@@ -1,0 +1,69 @@
+.container4{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#section4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    .content{
+        width: 50%;
+        margin: 30px auto;
+        h1{
+            font-size: 35px;
+            line-height: 100px;
+            color: $p-color;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            color: $p-color;
+            text-align: center;
+        }
+    }
+    .carusel{
+        
+        .col{
+            padding: 10px;
+        }
+        .card{
+            padding: 30px;
+            width: 400px;
+            height: 230px;
+            border-radius: 10px;
+            border: 2px solid $primary-color;
+            overflow: hidden;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 30px;
+                color: rgba(11, 19, 42, 1);
+                margin-top: 10px;
+            }
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+            h3{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            h4{
+                font-size: 14px;
+                font-weight: 400;
+                color: $p-color;
+            }
+        }  
+    }
+}
